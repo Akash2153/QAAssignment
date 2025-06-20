@@ -20,7 +20,7 @@ public class App {
         driver.manage().window().maximize();
         Thread.sleep(2000);
 
-        // Print page title
+       
         System.out.println("Title: " + driver.getTitle());
 
 
@@ -33,11 +33,12 @@ public class App {
         addToCartBtn.click();
         Thread.sleep(3000);
 
-        // Handle alert
-        driver.switchTo().alert().accept();
-        Thread.sleep(2000);
+        // // Handle alert
+        // driver.switchTo().alert().accept();
+        // Thread.sleep(2000);
 
 
+        
         driver.findElement(By.id("login2")).click();
         Thread.sleep(2000);
 
